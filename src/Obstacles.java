@@ -158,7 +158,8 @@ class RunCollection {
         return runs.stream().filter(x -> x.complete).mapToInt(x -> x.getRunTime()).min().orElse(Integer.MAX_VALUE);
     }
 
-//    Chandana chanceOfPersoalBest()
+
+//  this method used to find probability
 
     public double chanceOfPersonalBest(Run inProgress) {
 //        step 1 variabe initialization
@@ -194,7 +195,7 @@ class RunCollection {
         System.out.println("Probability : " + successes / (double) trials);
         return successes / (double) trials;
     }
-
+//this method is used to find best of every obstacle
     public int bestOfBests(){
         int total = 0;
 
@@ -221,9 +222,13 @@ class RunCollection {
 public class Obstacles {
     public static void main(String[] argv) {
         testRun();
+    System.out.println("Test Run Success");
         testRunCollection();
+        System.out.println("Test Run Collection Success");
         testBestOfBest();
+        System.out.println("Test Best Of Best Success");
         testChanceOfPersonalBest();
+        System.out.println("Test Chance of Personal Best Success");
         System.out.println("All test case passed");
     }
 
