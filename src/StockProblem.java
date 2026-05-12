@@ -282,10 +282,14 @@ public class StockProblem {
 
     public static void main(String[] args) {
         testPriceRecord();
+    System.out.println("test Price Record Success");
         testStockCollection();
+        System.out.println("test Stock Collection Success");
         testGetBiggestChange();
+        System.out.println("test Get Biggest Change  Success");
         testTradebook();
-        System.out.println("✅ All tests passed!");
+        System.out.println("test TradeBook Success");
+                System.out.println("✅ All tests passed!");
     }
 
     public static void testPriceRecord() {
@@ -309,6 +313,7 @@ public class StockProblem {
     }
 
     public static void testStockCollection() {
+
         System.out.println("Running testStockCollection");
         // Test basic StockCollection functionality
 
